@@ -19,7 +19,7 @@ export default {
   },
   emits: ['confirm'],
   setup (props, { emit }) {
-    const show = ref(true)
+    const show = ref(false)
     const dateTime = ref(new Date())
     const pickerValue = computed(() => {
       const now = dateTime.value
